@@ -3,6 +3,7 @@ Eu não lembro o que era pra colocar aqui, então, vou deixar um receita de bolo
 
 Ingredientes (1 porção)
 1 lata de milho (sem o líquido)
+
 1 lata de açúcar (medida da lata de milho)
 1/2 lata de óleo de soja
 1 colher (sopa) de fermento em pó
