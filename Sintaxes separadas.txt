@@ -1,0 +1,42 @@
+======
+SELECT * FROM cadastroaluno;
+======
+
+======
+SELECT * FROM cadastroprofessor;
+======
+
+======
+SELECT * FROM cadastrocurso;
+======
+
+=====
+SELECT rm, nomeAluno, endereco FROM cadastroaluno
+WHERE endereco LIKE "%Vila dos Porquinhos%";
+=====
+
+//quantidade de rm por professor:
+======
+SELECT nomeProfessor, COUNT(rm)  FROM cadastroprofessor
+INNER JOIN profalun ON cadastroprofessor.id = profalun.idpro
+INNER JOIN cadastroaluno ON profalun.rmalu = cadastroaluno.rm
+WHERE cadastroprofessor.id = 4;
+======
+
+
+//consultando o professor de um aluno em especifico:
+======
+SELECT nomeAluno, rm, nomeProfessor FROM cadastroaluno
+INNER JOIN profalun ON cadastroaluno.rm = profalun.rmalu
+INNER JOIN cadastroprofessor ON profalun.idpro = cadastroprofessor.id
+WHERE cadastroaluno.rm = 23226;
+======
+
+
+//listagem completa:
+======
+SELECT id, nomeProfessor, nomeAluno, rm, nomecurso, periodo FROM cadastroprofessor
+INNER JOIN profalun ON cadastroprofessor.id = profalun.idpro
+INNER JOIN cadastroaluno ON profalun.rmalu = cadastroaluno.rm
+INNER JOIN cadastrocurso ON profalun.idcur = cadastrocurso.idcurso;
+=====
