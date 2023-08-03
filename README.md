@@ -1,5 +1,5 @@
 # BDRevisao-Gestao-de-Alunos
-Eu não lembro o que era pra colocar aqui, então, vou deixar um receita de bolo de milho. Espero que ajude:
+Eu não lembro o que era pra colocar aqui, então, vou deixar uma receita de bolo de milho. Espero que ajude:
 
 
 Ingredientes (1 porção)
